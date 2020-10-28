@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>TesteFahrzeugpark</AssemblyName>
+    <RootNamespace>TesteFahrzeugpark</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Fahrzeugpark\Modul04.1f_Fahrzeugpark.csproj" />
+  </ItemGroup>
+
+</Project>

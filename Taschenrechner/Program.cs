@@ -4,6 +4,7 @@ namespace Taschenrechner
 {
     //Definition des Enumerator-Datentyps 'Rechenoperation'
     enum Rechenoperation { Addition = 1, Subtraktion, Multiplikation, Division }
+
     class Program
     {
         static void Main(string[] args)
