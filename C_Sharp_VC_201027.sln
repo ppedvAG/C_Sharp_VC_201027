@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul01_HelloWorld", "HelloWorld\Modul01_HelloWorld.csproj", "{DB5F8C5E-0CF9-4B90-929F-73E9B91B07F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul01_HelloWorld", "HelloWorld\Modul01_HelloWorld.csproj", "{DB5F8C5E-0CF9-4B90-929F-73E9B91B07F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab01_MiniRechner", "MiniRechner\Lab01_MiniRechner.csproj", "{09EF5E62-91B5-4D02-B9F2-0C17FA6ED32B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab01_MiniRechner", "MiniRechner\Lab01_MiniRechner.csproj", "{09EF5E62-91B5-4D02-B9F2-0C17FA6ED32B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul02.1_Kontrollstrukturen", "Kontrollstrukturen\Modul02.1_Kontrollstrukturen.csproj", "{920B0499-F38F-403B-B97A-B8FCBA6E1B57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul02.1_Kontrollstrukturen", "Kontrollstrukturen\Modul02.1_Kontrollstrukturen.csproj", "{920B0499-F38F-403B-B97A-B8FCBA6E1B57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul02.2_ZufallszahlenRaten", "ZufallszahlenRaten\Modul02.2_ZufallszahlenRaten.csproj", "{F1F24970-4526-4E4C-9CF1-B71262B2D305}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul02.2_ZufallszahlenRaten", "ZufallszahlenRaten\Modul02.2_ZufallszahlenRaten.csproj", "{F1F24970-4526-4E4C-9CF1-B71262B2D305}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab02_Lotto", "Lotto\Lab02_Lotto.csproj", "{08E9D260-B22F-4AC2-B1C2-A0BFD5CE8C02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab02_Lotto", "Lotto\Lab02_Lotto.csproj", "{08E9D260-B22F-4AC2-B1C2-A0BFD5CE8C02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul03.1_Enumeratoren", "Enumeratoren\Modul03.1_Enumeratoren.csproj", "{A52C789A-5636-43EB-B587-15D343AD2BD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul03.1_Enumeratoren", "Enumeratoren\Modul03.1_Enumeratoren.csproj", "{A52C789A-5636-43EB-B587-15D343AD2BD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul03.2_Funktionen", "Funktionen\Modul03.2_Funktionen.csproj", "{21A46998-31E7-42FF-B942-8918B6251383}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab03_Taschenrechner", "Taschenrechner\Lab03_Taschenrechner.csproj", "{79A0ED26-7DD5-49B3-A394-BE271195F498}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{A52C789A-5636-43EB-B587-15D343AD2BD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A52C789A-5636-43EB-B587-15D343AD2BD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A52C789A-5636-43EB-B587-15D343AD2BD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21A46998-31E7-42FF-B942-8918B6251383}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21A46998-31E7-42FF-B942-8918B6251383}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21A46998-31E7-42FF-B942-8918B6251383}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21A46998-31E7-42FF-B942-8918B6251383}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79A0ED26-7DD5-49B3-A394-BE271195F498}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79A0ED26-7DD5-49B3-A394-BE271195F498}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79A0ED26-7DD5-49B3-A394-BE271195F498}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79A0ED26-7DD5-49B3-A394-BE271195F498}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
