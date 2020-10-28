@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using System.Text;
 using Fahrzeugpark;
 
@@ -72,21 +73,86 @@ namespace TesteFahrzeugpark
 
             #region Lab05: PKW-, Schiff- und Flugzeug-Klasse
 
-            PKW pkw1 = new PKW("BMW", 250, 23000, 5);
-            Console.WriteLine(pkw1.BeschreibeMich());
-            pkw1.Hupe();
+            //PKW pkw1 = new PKW("BMW", 250, 23000, 5);
+            //Console.WriteLine(pkw1.BeschreibeMich());
+            //pkw1.Hupe();
 
-            Schiff schiff1 = new Schiff("Titanic", 40, 3500000, Schiff.SchiffsTreibstoff.Dampf);
-            Console.WriteLine(schiff1.BeschreibeMich());
-            schiff1.Hupe();
+            //Schiff schiff1 = new Schiff("Titanic", 40, 3500000, Schiff.SchiffsTreibstoff.Dampf);
+            //Console.WriteLine(schiff1.BeschreibeMich());
+            //schiff1.Hupe();
 
-            Flugzeug flugzeug1 = new Flugzeug("Boing", 750, 3000000, 9990);
-            Console.WriteLine(flugzeug1.BeschreibeMich());
-            flugzeug1.Hupe();
+            //Flugzeug flugzeug1 = new Flugzeug("Boing", 750, 3000000, 9990);
+            //Console.WriteLine(flugzeug1.BeschreibeMich());
+            //flugzeug1.Hupe();
 
-            Console.WriteLine(Fahrzeug.ZeigeAnzahlFahrzeuge());
+            //Console.WriteLine(Fahrzeug.ZeigeAnzahlFahrzeuge());
 
             #endregion
+
+            #region Modul06: Interfaces und Polymorphismus
+
+            //PKW pkw1 = new PKW("BMW", 250, 23000, 5);
+
+            //Fahrzeug fz1 = pkw1;
+
+            //IBewegbar bewegbaresObjekt = pkw1;
+
+            //bewegbaresObjekt.Crash();
+
+            //MontiereNeuesRad(pkw1);
+
+            //BenenneFahrzeugUm("Opel", pkw1);
+
+            #endregion
+
+            #region Lab06: IBeladbar
+
+            PKW pkw1 = new PKW("BMW", 250, 23000, 5);
+            Flugzeug flugzeug1 = new Flugzeug("Boing", 750, 3000000, 9990);
+            Schiff schiff1 = new Schiff("Titanic", 40, 3500000, Schiff.SchiffsTreibstoff.Dampf);
+
+            BeladeFahrzeuge(pkw1, flugzeug1);
+            BeladeFahrzeuge(flugzeug1, schiff1);
+            BeladeFahrzeuge(schiff1, pkw1);
+
+            Console.WriteLine("\n" + schiff1.BeschreibeMich());
+
+            schiff1.Entlade();
+
+            #endregion
+        }
+
+        //Methode Lab06
+        public static void BeladeFahrzeuge(Fahrzeug fz1, Fahrzeug fz2)
+        {
+            if (fz1 is IBeladbar)
+            {
+                ((IBeladbar)fz1).Belade(fz2);
+            }
+            else if (fz2 is IBeladbar)
+            {
+                (fz2 as IBeladbar).Belade(fz1);
+            }
+            else
+                Console.WriteLine("Keines der Fahrzeuge kann ein Fahrzeug transportieren.");
+        }
+
+        //Bsp-Methoden Modul06
+        public static void MontiereNeuesRad(IBewegbar bewegbaresObjekt)
+        {
+            bewegbaresObjekt.AnzahlRaeder++;
+
+            if (bewegbaresObjekt is Fahrzeug)
+            {
+                Console.WriteLine(((Fahrzeug)bewegbaresObjekt).Name + " hat nen neuen Reifen.");
+
+                Console.WriteLine((bewegbaresObjekt as Fahrzeug).Name + " hat nen neuen Reifen.");
+            }
+        }
+
+        public static void BenenneFahrzeugUm(string neuerName, Fahrzeug fz1)
+        {
+            fz1.Name = neuerName;
         }
     }
 }
