@@ -15,13 +15,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab02_Lotto", "Lotto\Lab02_
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul03.1_Enumeratoren", "Enumeratoren\Modul03.1_Enumeratoren.csproj", "{A52C789A-5636-43EB-B587-15D343AD2BD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul03.2_Funktionen", "Funktionen\Modul03.2_Funktionen.csproj", "{21A46998-31E7-42FF-B942-8918B6251383}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul03.2_Funktionen", "Funktionen\Modul03.2_Funktionen.csproj", "{21A46998-31E7-42FF-B942-8918B6251383}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab03_Taschenrechner", "Taschenrechner\Lab03_Taschenrechner.csproj", "{79A0ED26-7DD5-49B3-A394-BE271195F498}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab03_Taschenrechner", "Taschenrechner\Lab03_Taschenrechner.csproj", "{79A0ED26-7DD5-49B3-A394-BE271195F498}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul04.1f_Fahrzeugpark", "Fahrzeugpark\Modul04.1f_Fahrzeugpark.csproj", "{63AB9BFC-D5C4-4A7F-A535-EBA3C7DFE317}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul04.1f_Fahrzeugpark", "Fahrzeugpark\Modul04.1f_Fahrzeugpark.csproj", "{63AB9BFC-D5C4-4A7F-A535-EBA3C7DFE317}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul04.2f_TesteFahrzeugpark", "TesteFahrzeugpark\Modul04.2f_TesteFahrzeugpark.csproj", "{F508AAA0-F9B1-456A-95A2-8EA128F4F57C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul04.2f_TesteFahrzeugpark", "TesteFahrzeugpark\Modul04.2f_TesteFahrzeugpark.csproj", "{F508AAA0-F9B1-456A-95A2-8EA128F4F57C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul04.3_StructVsClass", "StrcuVSClass\Modul04.3_StructVsClass.csproj", "{DB31CC9B-5746-4E8C-A048-06F4FDE76B23}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{F508AAA0-F9B1-456A-95A2-8EA128F4F57C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F508AAA0-F9B1-456A-95A2-8EA128F4F57C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F508AAA0-F9B1-456A-95A2-8EA128F4F57C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB31CC9B-5746-4E8C-A048-06F4FDE76B23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB31CC9B-5746-4E8C-A048-06F4FDE76B23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB31CC9B-5746-4E8C-A048-06F4FDE76B23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB31CC9B-5746-4E8C-A048-06F4FDE76B23}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
