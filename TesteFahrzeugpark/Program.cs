@@ -211,7 +211,7 @@ namespace TesteFahrzeugpark
             Stack<Fahrzeug> fzStack = new Stack<Fahrzeug>();
             Dictionary<Fahrzeug, Fahrzeug> fzDict = new Dictionary<Fahrzeug, Fahrzeug>();
             //Deklaration und Initialisierung einer Variablen zur Bestimmung der Anzahl der Durchläufe 
-            int AnzahlFZs = 10;
+            int AnzahlFZs = 1000;
 
             //Schleife zur zufälligen Befüllung von Queue und Stack
             for (int i = 0; i < AnzahlFZs; i++)
@@ -254,7 +254,7 @@ namespace TesteFahrzeugpark
                 }
             }
 
-            //Erzwingen eines Durhclaufs der GarbageCollcetion (Löscht alle nicht-referenzierten Objekte aus dem RAM)
+            //Erzwingen eines Durchlaufs der GarbageCollcetion (Löscht alle nicht-referenzierten Objekte aus dem RAM)
             GC.Collect();
 
             //Programmpause

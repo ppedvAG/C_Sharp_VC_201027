@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul04.2f_TesteFahrzeugpar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul04.3_StructVsClass", "StrcuVSClass\Modul04.3_StructVsClass.csproj", "{DB31CC9B-5746-4E8C-A048-06F4FDE76B23}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "ExceptionHandling\ExceptionHandling.csproj", "{8C9E1FA2-45CB-4A33-808E-077C5E99F251}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{DB31CC9B-5746-4E8C-A048-06F4FDE76B23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB31CC9B-5746-4E8C-A048-06F4FDE76B23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB31CC9B-5746-4E8C-A048-06F4FDE76B23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C9E1FA2-45CB-4A33-808E-077C5E99F251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C9E1FA2-45CB-4A33-808E-077C5E99F251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C9E1FA2-45CB-4A33-808E-077C5E99F251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C9E1FA2-45CB-4A33-808E-077C5E99F251}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
