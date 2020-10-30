@@ -5,12 +5,29 @@ namespace Fahrzeugpark
 {
     public abstract class Fahrzeug
     {
+        #region Statische Member
+        //Als STATIC markierte Variablen und Methoden hängen an der Klasse selbst und nicht an instanziierten Objekten.
         public static int AnzahlErstellterFahrzeuge { get; set; } = 0;
 
         public static string ZeigeAnzahlFahrzeuge()
         {
             return $"Es wurden {AnzahlErstellterFahrzeuge} Fahrzeuge gebaut.";
         }
+
+        //Mittels des OPERATOR-Stichworts können für einzelne Klassen Operatoren definiert werden
+        //(Für Verwendung siehe TesteFahrzeugpark)
+        public static bool operator ==(Fahrzeug fz1, Fahrzeug fz2)
+        {
+            return fz1.Equals(fz2);
+
+            return fz1.Name == fz2.Name;
+        }
+
+        public static bool operator !=(Fahrzeug fz1, Fahrzeug fz2)
+        {
+            return !fz1.Equals(fz2);
+        }
+        #endregion
 
 
         #region Felder und Eigenschaften
@@ -109,7 +126,9 @@ namespace Fahrzeugpark
 
         public override string ToString()
         {
-            return this.BeschreibeMich();
+            //return this.BeschreibeMich();
+
+            return this.Name + ": " + this.Preis + "€"; 
         }
 
         public abstract void Hupe();

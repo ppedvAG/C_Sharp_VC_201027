@@ -27,13 +27,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul04.3_StructVsClass", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul08.1_ExceptionHandling", "ExceptionHandling\Modul08.1_ExceptionHandling.csproj", "{8C9E1FA2-45CB-4A33-808E-077C5E99F251}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul08.2_UnitTest_Fahrzeugpark", "UnitTest_Fahrzeugpark\Modul08.2_UnitTest_Fahrzeugpark.csproj", "{269526C2-5953-4A1E-8DA6-213DD759A5B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul08.2_UnitTest_Fahrzeugpark", "UnitTest_Fahrzeugpark\Modul08.2_UnitTest_Fahrzeugpark.csproj", "{269526C2-5953-4A1E-8DA6-213DD759A5B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul09.1_Delegates", "Delegates\Modul09.1_Delegates.csproj", "{7F8538E8-87C9-4D8B-9018-817DED472DA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Modul09.1_Delegates", "Delegates\Modul09.1_Delegates.csproj", "{7F8538E8-87C9-4D8B-9018-817DED472DA2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul09.2_WinForms_Net", "WinForms_Net\Modul09.2_WinForms_Net.csproj", "{68432256-76DC-4BBD-8836-8E56181179DD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab09_ButtonMoving", "ButtonMoving\Lab09_ButtonMoving.csproj", "{57B55981-B34E-4AE7-B8E0-CA4D3F8C7CD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul10.1_SpeichernUndLaden", "SpeichernUndLaden\Modul10.1_SpeichernUndLaden.csproj", "{C01E31E8-D238-48DE-80F0-FBB8862E1545}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul10.2_Serialisierung", "Serialisierung\Modul10.2_Serialisierung.csproj", "{F3C509D3-3376-4AEE-8A01-6244DC7C428A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTest", "WpfTest\WpfTest.csproj", "{D5B072C5-2C50-4022-8381-21E885D2EACF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +111,18 @@ Global
 		{57B55981-B34E-4AE7-B8E0-CA4D3F8C7CD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57B55981-B34E-4AE7-B8E0-CA4D3F8C7CD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57B55981-B34E-4AE7-B8E0-CA4D3F8C7CD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C01E31E8-D238-48DE-80F0-FBB8862E1545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C01E31E8-D238-48DE-80F0-FBB8862E1545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C01E31E8-D238-48DE-80F0-FBB8862E1545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C01E31E8-D238-48DE-80F0-FBB8862E1545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3C509D3-3376-4AEE-8A01-6244DC7C428A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3C509D3-3376-4AEE-8A01-6244DC7C428A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3C509D3-3376-4AEE-8A01-6244DC7C428A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3C509D3-3376-4AEE-8A01-6244DC7C428A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5B072C5-2C50-4022-8381-21E885D2EACF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5B072C5-2C50-4022-8381-21E885D2EACF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5B072C5-2C50-4022-8381-21E885D2EACF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5B072C5-2C50-4022-8381-21E885D2EACF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -202,72 +202,97 @@ namespace TesteFahrzeugpark
             //hs.Add(23); 
             #endregion
 
-
             #region Lab07 ZufälligeFahrzeuglisten
 
-            //Deklaration der benötigten Variablen und und Initialisierung mit Instanzen der benötigten Objekte
-            Random generator = new Random();
-            Queue<Fahrzeug> fzQueue = new Queue<Fahrzeug>();
-            Stack<Fahrzeug> fzStack = new Stack<Fahrzeug>();
-            Dictionary<Fahrzeug, Fahrzeug> fzDict = new Dictionary<Fahrzeug, Fahrzeug>();
-            //Deklaration und Initialisierung einer Variablen zur Bestimmung der Anzahl der Durchläufe 
-            int AnzahlFZs = 1000;
+            ////Deklaration der benötigten Variablen und und Initialisierung mit Instanzen der benötigten Objekte
+            //Random generator = new Random();
+            //Queue<Fahrzeug> fzQueue = new Queue<Fahrzeug>();
+            //Stack<Fahrzeug> fzStack = new Stack<Fahrzeug>();
+            //Dictionary<Fahrzeug, Fahrzeug> fzDict = new Dictionary<Fahrzeug, Fahrzeug>();
+            ////Deklaration und Initialisierung einer Variablen zur Bestimmung der Anzahl der Durchläufe 
+            //int AnzahlFZs = 1000;
 
-            //Schleife zur zufälligen Befüllung von Queue und Stack
-            for (int i = 0; i < AnzahlFZs; i++)
-            {
-                //Würfeln einer zufälligen Zahl im Switch
-                switch (generator.Next(1, 4))
-                {
-                    //Erzeugung von Objekten je nach zufälliger Zahl
-                    case 1:
-                        fzQueue.Enqueue(new Flugzeug($"Boing_Q{i}", 800, 3600000, 9999));
-                        fzStack.Push(new Flugzeug($"Boing_S{i}", 800, 3600000, 9999));
-                        break;
-                    case 2:
-                        fzQueue.Enqueue(new Schiff($"Titanic_Q{i}", 40, 3500000, Schiff.SchiffsTreibstoff.Dampf));
-                        fzStack.Push(new Schiff($"Titanic_S{i}", 40, 3500000, Schiff.SchiffsTreibstoff.Dampf));
-                        break;
-                    case 3:
-                        fzQueue.Enqueue(PKW.ErzeugeZufälligenPKW($"_Q{i}"));
-                        fzStack.Push(PKW.ErzeugeZufälligenPKW($"_S{i}"));
-                        break;
-                }
-            }
+            ////Schleife zur zufälligen Befüllung von Queue und Stack
+            //for (int i = 0; i < AnzahlFZs; i++)
+            //{
+            //    //Würfeln einer zufälligen Zahl im Switch
+            //    switch (generator.Next(1, 4))
+            //    {
+            //        //Erzeugung von Objekten je nach zufälliger Zahl
+            //        case 1:
+            //            fzQueue.Enqueue(new Flugzeug($"Boing_Q{i}", 800, 3600000, 9999));
+            //            fzStack.Push(new Flugzeug($"Boing_S{i}", 800, 3600000, 9999));
+            //            break;
+            //        case 2:
+            //            fzQueue.Enqueue(new Schiff($"Titanic_Q{i}", 40, 3500000, Schiff.SchiffsTreibstoff.Dampf));
+            //            fzStack.Push(new Schiff($"Titanic_S{i}", 40, 3500000, Schiff.SchiffsTreibstoff.Dampf));
+            //            break;
+            //        case 3:
+            //            fzQueue.Enqueue(PKW.ErzeugeZufälligenPKW($"_Q{i}"));
+            //            fzStack.Push(PKW.ErzeugeZufälligenPKW($"_S{i}"));
+            //            break;
+            //    }
+            //}
 
-            //Schleife zur Prüfung auf das Interface und Befüllung des Dictionaries
-            for (int i = 0; i < AnzahlFZs; i++)
-            {
-                //Prüfung, ob das Interface vorhanden ist (mittels Peek(), da die Objekte noch benötigt werden)...
-                if (fzQueue.Peek() is IBeladbar)
-                {
-                    //...wenn ja, dann Cast in das Interface und Ausführung der Belade()-Methode (mittels Peek())...
-                    ((IBeladbar)fzQueue.Peek()).Belade(fzStack.Peek());
-                    //...sowie Hinzufügen zum Dictionary (mittels Pop()/Dequeue(), um beim nächsten Durchlauf andere Objekte an den Spitzen zu haben)
-                    fzDict.Add(fzQueue.Dequeue(), fzStack.Pop());
-                }
-                else
-                {
-                    //... wenn nein, dann Löschung der obersten Objekte (mittels Pop()/Dequeue())
-                    fzQueue.Dequeue();
-                    fzStack.Pop();
-                }
-            }
+            ////Schleife zur Prüfung auf das Interface und Befüllung des Dictionaries
+            //for (int i = 0; i < AnzahlFZs; i++)
+            //{
+            //    //Prüfung, ob das Interface vorhanden ist (mittels Peek(), da die Objekte noch benötigt werden)...
+            //    if (fzQueue.Peek() is IBeladbar)
+            //    {
+            //        //...wenn ja, dann Cast in das Interface und Ausführung der Belade()-Methode (mittels Peek())...
+            //        ((IBeladbar)fzQueue.Peek()).Belade(fzStack.Peek());
+            //        //...sowie Hinzufügen zum Dictionary (mittels Pop()/Dequeue(), um beim nächsten Durchlauf andere Objekte an den Spitzen zu haben)
+            //        fzDict.Add(fzQueue.Dequeue(), fzStack.Pop());
+            //    }
+            //    else
+            //    {
+            //        //... wenn nein, dann Löschung der obersten Objekte (mittels Pop()/Dequeue())
+            //        fzQueue.Dequeue();
+            //        fzStack.Pop();
+            //    }
+            //}
 
-            //Erzwingen eines Durchlaufs der GarbageCollcetion (Löscht alle nicht-referenzierten Objekte aus dem RAM)
-            GC.Collect();
+            ////Erzwingen eines Durchlaufs der GarbageCollcetion (Löscht alle nicht-referenzierten Objekte aus dem RAM)
+            //GC.Collect();
 
-            //Programmpause
-            Console.ReadKey();
-            Console.WriteLine("\n----------LADELISTE----------");
+            ////Programmpause
+            //Console.ReadKey();
+            //Console.WriteLine("\n----------LADELISTE----------");
 
-            //Schleife zur Ausgabe des Dictionaries
-            foreach (var item in fzDict)
-            {
-                Console.WriteLine($"'{item.Key.Name}' hat '{item.Value.Name}' geladen.");
-            }
+            ////Schleife zur Ausgabe des Dictionaries
+            //foreach (var item in fzDict)
+            //{
+            //    Console.WriteLine($"'{item.Key.Name}' hat '{item.Value.Name}' geladen.");
+            //}
 
             #endregion
+
+            //Erstellung von Bsp-Objekten
+            PKW pkw1 = PKW.ErzeugeZufälligenPKW("");
+            PKW pkw2 = PKW.ErzeugeZufälligenPKW("");
+
+            //Ausgabe der ToString-Funktion des PKWs (wird in Fahrzeugklasse überschrieben)
+            Console.WriteLine(pkw1);
+
+            //Bsp für die Verwendung der in der Fahrzeug-Klasse definierten Operatoren (vgl. Fahrzeugpark.Fahrzeug)
+            Console.WriteLine(pkw1 == pkw2);
+            Console.WriteLine(pkw1 == pkw1);
+
+            Flugzeug flug1 = new Flugzeug($"Boing", 800, 3600000, 9999);
+
+            //Bsp für die Verwendung von IEnumerable (vgl. Fahrzeugpark.Flugzeug)
+            foreach (var item in flug1)
+            {
+                Console.WriteLine(item);
+            }
+
+            //Bsp für die Verwendung der Indexer-Property (vgl. Fahrzeugpark.Flugzeug)
+            Console.WriteLine(flug1[2]);
+
+            Random gene = new Random();
+            //Bsp für die Verwendung einer Erweiterungsmethode (s.u.)
+            gene.NextInclusive(1, 10);
         }
 
         //Methode Lab06
@@ -301,6 +326,16 @@ namespace TesteFahrzeugpark
         public static void BenenneFahrzeugUm(string neuerName, Fahrzeug fz1)
         {
             fz1.Name = neuerName;
+        }
+    }
+
+    static class Hilfsmethoden
+    {
+        //Mittels des THIS-Stichworts in der Parameterübergabe kann eine Methode als Erweiterungsmethode einer Klasse definiert
+        //werden. Diese muss in einer statischen Klasse beschrieben werden und wird dann als Teil der zugeordneten Klasse betrachtet.
+        public static int NextInclusive(this Random generator, int untergrenze, int obergrenze)
+        {
+            return generator.Next(untergrenze, obergrenze + 1);
         }
     }
 }
